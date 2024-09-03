@@ -1,11 +1,12 @@
 #app{
   display: grid;
-  grid-template-columns: auto auto;
-  /* justify-content: center; */
+  grid-template-columns: 400px 820px;
+  justify-content: center;
 
   height: 100vh;
   overflow: hidden;
   gap: 1.25rem;
+
 }
 
 aside{
@@ -14,10 +15,11 @@ aside{
   background-image: url(../assets/Background.png);
   background-repeat: no-repeat;
   object-fit: cover;
-  margin-left: auto;
+  max-height: 45.5rem;
+
 
   & .aside-container{
-    max-width: 21rem;
+    
     
     h1{
       font: var(--text-logo);
@@ -37,9 +39,37 @@ main{
   padding: 5rem 8.125rem;
   border-radius: 0.75rem;
   background-color: var(--shape-body);
-  margin-right: auto;
+  /* margin-right: auto; */
 
   .main-container{
-    max-width: 35rem;
+    /* max-width: 35rem; */
+
+    & h1 {
+      font: var(--heading-md);
+      color: var(--text-heading);
+    }
+
+    fieldset{
+      border: none;
+      
+    }
+
+    img{
+      width: 1.5rem;
+      height: 1.5 rem;
+      color: var(--input-placeholder);
+    }
+
+    legend{
+      display: flex;
+      align-items: center;
+      padding-block: 2.5rem 1.5rem;
+      gap: 0.75rem;
+      font: var(--heading-sm);
+      color: var(--text-heading);
+      
+    }
+
   }
 }
+
