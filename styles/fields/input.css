@@ -19,6 +19,9 @@ label {
   margin-bottom: 0.75rem;
 }
 
+textarea{
+  height: 8.5rem;
+}
 input:focus, textarea:focus{
   outline: 0.125rem solid var(--brand-light); 
   border: 0.125rem solid transparent;
