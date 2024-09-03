@@ -13,8 +13,7 @@
 
 .radio-inner{
   display: grid;
-  justify-items: center;
-  align-items: center;
+  justify-content: center;
   position: relative;
   
   
@@ -22,6 +21,7 @@
 
   & .flex{
     gap: 0.5rem;
+    align-items: center;
   }
 
   & input{
