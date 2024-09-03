@@ -1,8 +1,10 @@
-:root{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
 
+:root{
   /* Brands */
   --brand-light: #59B2FF;
   --brand-mid: #3487CF;
@@ -26,16 +28,22 @@
   --text-body: #C8CDD0;
   --text-heading: #F9F9F9;
 
-  --font-family-Leckerli: "Leckerli One", cursive;;
-  --font-family-Open: "Open Sans", sans-serif;;
+  --font-family-Leckerli: "Leckerli One", cursive;
+  --font-family-Open: "Open Sans", sans-serif;
   --font-family-baloo: "Baloo 2", system-ui;
 
-  --text-logo: 400 2.5rem/auto var(--font-family-Leckerli);
+  --text-logo: 400 2.5rem var(--font-family-Leckerli);
 
-  --heading-md: 700 1.75rem/auto var(--font-family-baloo);
-  --heading-sm: 700 1.125rem/auto var(--font-family-baloo);
+  --heading-md: 700 1.75rem var(--font-family-baloo);
+  --heading-sm: 700 1.125rem var(--font-family-baloo);
 
-  --text-body-md: 400 1rem/auto var(--font-family-Open);
-  --text-body-sm: 400 0.875rem/auto var(--font-family-Open);
-  --text-body-xs: 400 0.75rem/auto var(--font-family-Open);
+  --text-body-md: 400 1rem var(--font-family-Open);
+  --text-body-sm: 400 0.875rem var(--font-family-Open);
+  --text-body-xs: 400 0.75rem var(--font-family-Open);
+}
+
+body{  
+  padding: 1.25rem;
+  overflow: hidden;
+  background-color: var(--shape-background);
 }
