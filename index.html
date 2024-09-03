@@ -26,11 +26,84 @@
       <main>
         <div class="main-container">
           <h1>Crie seu convite</h1>
-          <fieldset>
+          <form>
+            <fieldset>
             
-            <legend><img src="assets/icons/calendar.svg" alt=""><span>Sobre o evento</span></legend>
-            
-          </fieldset>
+              <legend><img src="assets/icons/calendar.svg" alt="">Sobre o evento</legend>
+  
+              <div class="input-wrapper">
+                <label for="titlename">Título</label>
+                <input
+                  id="titlename"
+                  name="titlename"
+                  type="text"
+                  placeholder="Nome do evento"
+                />
+              </div>
+
+              <div class="flex flex-date">
+                <div class="input-wrapper">
+                  <label for="date-start">Início</label>
+                  <input
+                    id="date-start"
+                    name="date-start"
+                    type="datetime-local"
+                    value="DD/MM/AAA"
+                    
+                  />
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="date-end">Fim</label>
+                  <input
+                    id="date-end"
+                    name="date-end"
+                    type="datetime-local"
+                    
+                  />
+                </div>
+              </div>
+
+              <div class="flex">
+                <div class="input-wrapper">
+                  <label for="type">Tipo</label>
+  
+                  <div class="radio-wrapper">
+                    <div class="radio-inner">
+                      <div class="flex">
+                        <div class="in-person-image"></div>
+                        <span>Presencial</span>
+                      </div>
+                      <input type="radio" name="in-person" id="in-person">
+                    </div>
+                    <div class="radio-inner">
+                      <div class="flex">
+                        <div class="online-image"></div>
+                      <span>Online</span>
+                      </div>
+                      <input type="radio" name="online" id="online">
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="input-wrapper">
+                  <label for="titlename">Local</label>
+                  <input
+                    id="locale"
+                    name="locale"
+                    type="text"
+                    placeholder="Link ou endereço"
+                  />
+                </div>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="description">Descrição</label>
+                <textarea name="description" id="description" placeholder="Escreva sobre os detalhes do evento"></textarea>
+              </div>
+              
+            </fieldset>
+          </form>
         </div>
       </main>
     </div>

@@ -1,0 +1,81 @@
+.radio-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--input-base);
+  border-radius: 0.5rem;
+  border: 0.125rem solid var(--input-stroke);
+  padding: 0.25rem;
+  height: 48px;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */  
+
+}
+
+.radio-inner{
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  position: relative;
+  
+  
+  
+
+  & .flex{
+    gap: 0.5rem;
+  }
+
+  & input{
+    all: unset;
+    position: absolute;
+    inset: 0;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+    /* border: 1px solid red; */
+    
+  }
+  
+
+  & span{
+    font: 400 var(--text-body-sm);
+    color: var(--text-body);
+    }
+
+   &  
+  
+  .in-person-image{
+    background-image: url(../../assets/icons/building-2.svg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 1rem;
+    height: 1rem;
+    z-index: 2;
+
+  }
+
+  .online-image{
+    background-image: url(../../assets/icons/video.svg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 1rem;
+    height: 1rem;
+    z-index: 2;
+  }
+
+  &:focus-within {
+    background-color: var(--shape-button);
+    border-radius: 0.3125rem;
+
+    & .in-person-image{
+      background-image: url(../../assets/icons/building-hover.svg);
+    }
+
+    & .online-image{
+      background-image: url(../../assets/icons/video-hover.svg);
+    }
+
+    & span{
+      font: 600 var(--text-body-sm);
+    }
+  }
+}
+

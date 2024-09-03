@@ -37,9 +37,9 @@
   --heading-md: 700 1.75rem var(--font-family-baloo);
   --heading-sm: 700 1.125rem var(--font-family-baloo);
 
-  --text-body-md: 400 1rem var(--font-family-Open);
-  --text-body-sm: 400 0.875rem var(--font-family-Open);
-  --text-body-xs: 400 0.75rem var(--font-family-Open);
+  --text-body-md: 1rem var(--font-family-Open);
+  --text-body-sm: 0.875rem var(--font-family-Open);
+  --text-body-xs: 0.75rem var(--font-family-Open);
 }
 
 body{  
