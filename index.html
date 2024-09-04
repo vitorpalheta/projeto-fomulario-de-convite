@@ -26,86 +26,112 @@
       <main>
         <div class="main-container">
           <h1>Crie seu convite</h1>
-          <form>
-            <fieldset>
-            
-              <legend><img src="assets/icons/calendar.svg" alt="">Sobre o evento</legend>
-  
-              <div class="input-wrapper">
-                <label for="titlename">Título</label>
-                <input
-                  id="titlename"
-                  name="titlename"
-                  type="text"
-                  placeholder="Nome do evento"
-                />
-              </div>
-
-              <div class="flex flex-date">
+          <section id="about-event">
+            <form>
+              <fieldset>
+              
+                <legend><img src="assets/icons/calendar.svg" alt="">Sobre o evento</legend>
+    
                 <div class="input-wrapper">
-                  <label for="date-start">Início</label>
+                  <label for="titlename">Título</label>
                   <input
-                    id="date-start"
-                    name="date-start"
-                    type="datetime-local"
-                    value="DD/MM/AAA"
-                    
+                    id="titlename"
+                    name="titlename"
+                    type="text"
+                    placeholder="Nome do evento"
                   />
                 </div>
-
-                <div class="input-wrapper">
-                  <label for="date-end">Fim</label>
-                  <input
-                    id="date-end"
-                    name="date-end"
-                    type="datetime-local"
-                    
-                  />
-                </div>
-              </div>
-
-              <div class="flex">
-                <div class="input-wrapper">
-                  <label for="type">Tipo</label>
   
-                  <div class="radio-wrapper">
-                    <div class="radio-inner">
-                      <div class="flex">
-                        <div class="in-person-image"></div>
-                        <span>Presencial</span>
+                <div class="flex flex-date">
+                  <div class="input-wrapper">
+                    <label for="date-start">Início</label>
+                    <input
+                      id="date-start"
+                      name="date-start"
+                      type="datetime-local"
+                      value="DD/MM/AAA"
+                      
+                    />
+                  </div>
+  
+                  <div class="input-wrapper">
+                    <label for="date-end">Fim</label>
+                    <input
+                      id="date-end"
+                      name="date-end"
+                      type="datetime-local"
+                      
+                    />
+                  </div>
+                </div>
+  
+                <div class="flex">
+                  <div class="input-wrapper">
+                    <label for="type">Tipo</label>
+    
+                    <div class="radio-wrapper">
+                      <div class="radio-inner">
+                        <div class="flex">
+                          <div class="in-person-image"></div>
+                          <span>Presencial</span>
+                        </div>
+                        <input type="radio" name="in-person" id="in-person">
                       </div>
-                      <input type="radio" name="in-person" id="in-person">
-                    </div>
-                    <div class="radio-inner">
-                      <div class="flex">
-                        <div class="online-image"></div>
-                      <span>Online</span>
+                      <div class="radio-inner">
+                        <div class="flex">
+                          <div class="online-image"></div>
+                        <span>Online</span>
+                        </div>
+                        <input type="radio" name="online" id="online">
                       </div>
-                      <input type="radio" name="online" id="online">
                     </div>
+                  </div>
+    
+                  <div class="input-wrapper">
+                    <label for="locale">Local</label>
+                    <input
+                      id="locale"
+                      name="locale"
+                      type="text"
+                      placeholder="Link ou endereço"
+                    />
                   </div>
                 </div>
   
                 <div class="input-wrapper">
-                  <label for="locale">Local</label>
-                  <input
-                    id="locale"
-                    name="locale"
-                    type="text"
-                    placeholder="Link ou endereço"
-                  />
+                  <label for="description">Descrição</label>
+                  <textarea name="description" id="description" placeholder="Escreva sobre os detalhes do evento"></textarea>
                 </div>
-              </div>
+                
+              </fieldset>
+            </form>
+          </section>
 
-              <div class="input-wrapper">
-                <label for="description">Descrição</label>
-                <textarea name="description" id="description" placeholder="Escreva sobre os detalhes do evento"></textarea>
-              </div>
-              
-            </fieldset>
-          </form>
+          <section id="customization">
+            <form>
+              <fieldset>
+                <legend><img src="assets/icons/paintbrush-vertical.svg" alt="">Personalização</legend>
+
+                <div class="input-wrapper">
+                  <label for="maincolor">Cor principal</label>
+                  <div class="input-color">
+                    <input type="color" value="#59B2FF"><input type="color" value="#6A59FF"><input type="color" value="#B259FF"><input type="color" value="#FF59F9"><input type="color" value="#FF598B"><input type="color" value="#FF5959"><input type="color" value="#FF8B59"><input type="color" value="#FFCD59"><input type="color" value="#E1FF59"><input type="color" value="#59FF91"><input type="color" value="#59FFF9">
+                  </div>
+                </div>
+              </fieldset>
+
+            </form>
+          </section>
+
+          <section id="contact">
+            <form></form>
+          </section>
         </div>
       </main>
+
+      <footer>
+
+      </footer>
     </div>
   </body>
 </html>

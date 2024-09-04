@@ -8,16 +8,46 @@ input, textarea{
   background-color: var(--input-base);
   font: 400 var(--text-body-md);
   color: var(--input-placeholder);
-
-  
 }
 
-label {
+input[type="color"]{
+  padding: 6px;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--shape-button);
+  
+  
+
+  &::-webkit-color-swatch{
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+  }
+
+  &::-webkit-color-swatch-wrapper{
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+  }
+}
+
+
+#about-event label {
   font: 400 var(--text-body-sm);
   color: var(--text-body);
   display: block;
   margin-bottom: 0.75rem;
 }
+
+label{
+  font: 400 var(--text-body-sm);
+  color: var(--text-body);
+  display: block;
+  margin-bottom: 1rem;
+}
+
 
 textarea{
   height: 8.5rem;

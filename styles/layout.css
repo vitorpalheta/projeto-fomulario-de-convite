@@ -9,6 +9,10 @@
 
 }
 
+section {
+  margin-bottom: 48px;
+}
+
 aside{
   padding: 2rem 2rem 0;
   border-radius: 0.75rem;
@@ -47,6 +51,7 @@ main{
     & h1 {
       font: var(--heading-md);
       color: var(--text-heading);
+      padding-bottom: 2.5rem;
     }
 
     
@@ -54,7 +59,7 @@ main{
     img{
       width: 1.5rem;
       height: 1.5 rem;
-      color: var(--input-placeholder);
+      
     }
 
     
