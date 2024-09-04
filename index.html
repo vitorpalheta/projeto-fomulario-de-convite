@@ -217,6 +217,40 @@
                     </div>
                   </div>
                 </div>
+
+                <div class="input-image">
+                  <div class="flex">
+                    <div class="style-switch">
+                      <label for="">Estilo</label>
+
+                      <div class="switch-selection">
+                        <label class="switch">
+                          <input type="checkbox">
+                          <span class="slider round"></span>
+                        </label>
+                        <span>Escuro</span>
+                      </div>
+                      
+                    </div>
+                    <div class="input-file">
+                      <label>Foto de capa</label>
+
+                      <div class="dropzone">
+                        <div id="choose-file-button" class="button-file">
+                          <img src="./assets/icons/upload.svg" alt="imagem de upload">
+                          <span>Selecionar</span>
+                          <input onchange="validarTipoArquivo('cover-photo')" type="file" id="cover-photo" name="cover-photo" accept=".png">
+                        </div>
+                        <span id="file-name">Nenhum arquivo selecionado</span>
+                      </div>
+
+                      <div id="alert-error">
+                        <img src="./assets/icons/circle-alert.svg" alt="ícone de alerta">
+                        <span id="error"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </fieldset>
             </form>
           </section>
@@ -230,4 +264,47 @@
       <footer></footer>
     </div>
   </body>
+
+  <script>
+    
+    let input = document.getElementById("choose-file-button");
+    let fileName = document.getElementById("file-name")
+
+    input.addEventListener("change", () => {
+      let file = document.querySelector("input[type=file]").files[0];
+
+      fileName.innerText = file.name;
+      fileName.style.color = "#c8cdd0";
+    })
+
+  </script>
+
+<script>
+  
+    // Função para validar o tipo do arquivo
+    document.getElementById("alert-error").style.display = "none";
+    let error = document.getElementById("error").innerHTML;
+    
+    function validarTipoArquivo(seletorCampo){
+      var arquivo = document.getElementById('cover-photo');
+      // var error = document.getElementById('alert-error');
+      
+      // console.log(arquivo.files[0].type);
+
+      // Validar o tipo de arquivo
+      if(arquivo.files[0].type != "image/png"){
+
+        // Apresenta a mensagem de erro
+        document.getElementById("alert-error").style.display = "flex";
+        document.getElementById("error").innerHTML = "Error: Tipo de aquivo inválido!";
+
+        // Limpar o campo
+        arquivo.value = '';
+      }else{
+        // arquivo.value = arquivo.value;
+        document.getElementById("alert-error").style.display = "none";
+      }
+    }
+</script>
+  
 </html>
