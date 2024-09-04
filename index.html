@@ -18,7 +18,7 @@
     <div id="app">
       <aside>
         <div class="aside-container">
-          <img src="assets/Logo.svg" alt="Logo">
+          <img src="assets/Logo.svg" alt="Logo" />
           <h1>Festivite</h1>
           <p>Crie um convite digital para o seu evento</p>
         </div>
@@ -29,9 +29,10 @@
           <section id="about-event">
             <form>
               <fieldset>
-              
-                <legend><img src="assets/icons/calendar.svg" alt="">Sobre o evento</legend>
-    
+                <legend>
+                  <img src="assets/icons/calendar.svg" alt="" />Sobre o evento
+                </legend>
+
                 <div class="input-wrapper">
                   <label for="titlename">Título</label>
                   <input
@@ -41,7 +42,7 @@
                     placeholder="Nome do evento"
                   />
                 </div>
-  
+
                 <div class="flex flex-date">
                   <div class="input-wrapper">
                     <label for="date-start">Início</label>
@@ -49,44 +50,41 @@
                       id="date-start"
                       name="date-start"
                       type="datetime-local"
-                      value="DD/MM/AAA"
-                      
                     />
                   </div>
-  
+
                   <div class="input-wrapper">
                     <label for="date-end">Fim</label>
                     <input
                       id="date-end"
                       name="date-end"
                       type="datetime-local"
-                      
                     />
                   </div>
                 </div>
-  
+
                 <div class="flex">
                   <div class="input-wrapper">
                     <label for="type">Tipo</label>
-    
+
                     <div class="radio-wrapper">
                       <div class="radio-inner">
                         <div class="flex">
                           <div class="in-person-image"></div>
                           <span>Presencial</span>
                         </div>
-                        <input type="radio" name="in-person" id="in-person">
+                        <input type="radio" name="in-person" id="in-person" />
                       </div>
                       <div class="radio-inner">
                         <div class="flex">
                           <div class="online-image"></div>
-                        <span>Online</span>
+                          <span>Online</span>
                         </div>
-                        <input type="radio" name="online" id="online">
+                        <input type="radio" name="online" id="online" />
                       </div>
                     </div>
                   </div>
-    
+
                   <div class="input-wrapper">
                     <label for="locale">Local</label>
                     <input
@@ -97,12 +95,15 @@
                     />
                   </div>
                 </div>
-  
+
                 <div class="input-wrapper">
                   <label for="description">Descrição</label>
-                  <textarea name="description" id="description" placeholder="Escreva sobre os detalhes do evento"></textarea>
+                  <textarea
+                    name="description"
+                    id="description"
+                    placeholder="Escreva sobre os detalhes do evento"
+                  ></textarea>
                 </div>
-                
               </fieldset>
             </form>
           </section>
@@ -110,16 +111,113 @@
           <section id="customization">
             <form>
               <fieldset>
-                <legend><img src="assets/icons/paintbrush-vertical.svg" alt="">Personalização</legend>
+                <legend>
+                  <img
+                    src="assets/icons/paintbrush-vertical.svg"
+                    alt=""
+                  />Personalização
+                </legend>
 
-                <div class="input-wrapper">
+                <div class="input-color">
                   <label for="maincolor">Cor principal</label>
-                  <div class="input-color">
-                    <input type="color" value="#59B2FF"><input type="color" value="#6A59FF"><input type="color" value="#B259FF"><input type="color" value="#FF59F9"><input type="color" value="#FF598B"><input type="color" value="#FF5959"><input type="color" value="#FF8B59"><input type="color" value="#FFCD59"><input type="color" value="#E1FF59"><input type="color" value="#59FF91"><input type="color" value="#59FFF9">
+                  <div>
+                    <input type="color" value="#59B2FF" /><input
+                      type="color"
+                      value="#6A59FF"
+                    /><input type="color" value="#B259FF" /><input
+                      type="color"
+                      value="#FF59F9"
+                    /><input type="color" value="#FF598B" /><input
+                      type="color"
+                      value="#FF5959"
+                    /><input type="color" value="#FF8B59" /><input
+                      type="color"
+                      value="#FFCD59"
+                    /><input type="color" value="#E1FF59" /><input
+                      type="color"
+                      value="#59FF91"
+                    /><input type="color" value="#59FFF9" />
+                  </div>
+                </div>
+
+                <div class="inputs-radio">
+                  <label for="">Tema do evento</label>
+
+                  <div class="radio-cards">
+                    <div class="card-radio">
+                      <img src="./assets/Image.png" alt="">
+                      <label for="birth">Aniversário</label>
+                      <input type="radio" name="birth-shift" id="birth">
+                    </div>
+
+                    <div class="card-radio">
+                      <img src="./assets/Image-1.png" alt="">
+                      <label for="children-birth">Infantil</label>
+                      <input type="radio" name="children-birth-shift" id="children-birth">
+                    </div>
+
+                    <div class="card-radio">
+                      <img src="./assets/Image-2.png" alt="">
+                      <label for="graduation">Formatura</label>
+                      <input type="radio" name="graduation-shift" id="graduation">
+                    </div>
+
+                    <div class="card-radio">
+                      <img src="./assets/Image-3.png" alt="">
+                      <label for="marriage">Casamento</label>
+                      <input type="radio" name="marriage-shift" id="marriage">
+                    </div>
+
+                    <div class="card-radio">
+                      <img src="./assets/Image-4.png" alt="">
+                      <label for="baby-shower">Chá de bebê</label>
+                      <input type="radio" name="baby-shower-shift" id="baby-shower">
+                    </div>
+
+                    <div class="card-radio">
+                      <img src="./assets/Image-5.png" alt="">
+                      <label for="bridal-shower">Chá de panela</label>
+                      <input type="radio" name="bridal-shower-shift" id="bridal-shower">
+                    </div>
+
+                    <div class="card-radio">
+                      <img src="./assets/Image-6.png" alt="">
+                      <label for="carnival">Carnaval</label>
+                      <input type="radio" name="carnival-shift" id="carnival">
+                    </div>
+
+                    <div class="card-radio">
+                      <img src="./assets/Image-7.png" alt="">
+                      <label for="easter">Páscoa</label>
+                      <input type="radio" name="easter-shift" id="easter">
+                    </div>
+
+                    <div class="card-radio">
+                      <img src="./assets/Image-8.png" alt="">
+                      <label for="june-celebration">São João</label>
+                      <input type="radio" name="june-celebration-shift" id="june-celebration">
+                    </div>
+
+                    <div class="card-radio">
+                      <img src="./assets/Image-9.png" alt="">
+                      <label for="halloween">Halloween</label>
+                      <input type="radio" name="halloween-shift" id="halloween">
+                    </div>
+
+                    <div class="card-radio">
+                      <img src="./assets/Image-10.png" alt="">
+                      <label for="christmas">Natal</label>
+                      <input type="radio" name="christmas-shift" id="christmas">
+                    </div>
+
+                    <div class="card-radio">
+                      <img src="./assets/Image-11.png" alt="">
+                      <label for="other">Outro</label>
+                      <input type="radio" name="other-shift" id="other">
+                    </div>
                   </div>
                 </div>
               </fieldset>
-
             </form>
           </section>
 
@@ -129,9 +227,7 @@
         </div>
       </main>
 
-      <footer>
-
-      </footer>
+      <footer></footer>
     </div>
   </body>
 </html>
