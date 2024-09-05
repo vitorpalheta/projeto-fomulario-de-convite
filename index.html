@@ -101,9 +101,14 @@
                   <textarea
                     name="description"
                     id="description"
-                    placeholder="Escreva sobre os detalhes do evento"
+                    placeholder="Escreva sobre os detalhes do evento" required
                   ></textarea>
+                  <div id="error">
+                    <img src="./assets/icons/circle-alert.svg" alt="ícone de alerta">
+                    <span id="error">Campo obrigatório</span>
+                  </div>
                 </div>
+                
               </fieldset>
             </form>
           </section>
@@ -256,12 +261,57 @@
           </section>
 
           <section id="contact">
-            <form></form>
+            <fieldset>
+              <legend>
+                <img src="./assets/icons/contact.svg" alt="ícone de contato"><span>Dados para contato</span></legend>
+
+                <div class="input-wrapper">
+                  <label for="full-name">Nome</label>
+                  <input name="full-name" type="text" id="full-name" placeholder="Nome completo" required />
+                  <div id="alert-error">
+                    <img src="./assets/icons/circle-alert.svg" alt="ícone de alerta">
+                    <span id="error">Campo obrigatório</span>
+                  </div>
+                  </div>
+                
+
+                <div class="flex">
+                  <div class="input-wrapper">
+                    <label for="email">E-mail</label>
+                    <input
+                      id="email"
+                      name="email"
+                      type="email"
+                      placeholder="exemplo@email.com"
+                    />
+                  </div>
+
+                  <div class="input-wrapper">
+                    <label for="phone">Telefone</label>
+                    <input
+                      id="phone"
+                      name="phone"
+                      type="tel"
+                      placeholder="(99) 99999-9999"
+                    />
+                  </div>
+                </div>
+
+              
+            </fieldset>
+          </section>
+
+          <section id="terms">
+            
           </section>
         </div>
       </main>
 
-      <footer></footer>
+      <footer>
+        <div>
+          teste
+        </div>
+      </footer>
     </div>
   </body>
 

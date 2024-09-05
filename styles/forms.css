@@ -251,14 +251,20 @@ input:checked + .slider:before {
   padding: 6px 20px
 }
 
-#alert-error{
+#alert-error, #error{
   display: flex;
   gap: 0.5rem;
   align-items: center;
   margin-top: 0.5rem;
-  /* display: none; */
-}
-#error{
   font: 400 var(--text-body-xs);
   color: var(--danger);
+  /* display: none; */
+
+  & span{
+    display: contents;
+  }
+}
+
+#error{
+
 }

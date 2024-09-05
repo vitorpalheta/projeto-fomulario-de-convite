@@ -8,6 +8,18 @@ input, textarea{
   background-color: var(--input-base);
   font: 400 var(--text-body-md);
   color: var(--input-placeholder);
+
+  &:invalid{
+  border: 1px solid var(--danger);
+    
+  }
+  &:valid + #alert-error, &:valid + #error {
+    display: none;
+  }
+}
+
+input{
+  height: 3rem;
 }
 
 input[type="color"]{
@@ -69,3 +81,8 @@ input[type="datetime-local"]{
   /* -webkit-appearance: none; */
 }
 
+input[type="radio"]{
+  all: unset;
+  position: absolute;
+  inset: 0;
+}

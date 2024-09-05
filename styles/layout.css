@@ -13,6 +13,10 @@ section {
   margin-bottom: 48px;
 }
 
+section:last-child{
+  margin-bottom: 40px;
+}
+
 aside{
   padding: 2rem 2rem 0;
   border-radius: 0.75rem;
@@ -55,9 +59,9 @@ main{
     }
 
 
-
-    
-
   }
 }
 
+#terms{
+  border-top: 2px solid var(--input-stroke);
+}
