@@ -165,10 +165,7 @@ legend{
 
 input:checked + .slider {
   background-color: var(--brand-light);
-}
-
-input:focus + .slider {
-  /* box-shadow: 0 0 1px #2196F3; */
+  
 }
 
 input:checked + .slider:before {
@@ -263,8 +260,4 @@ input:checked + .slider:before {
   & span{
     display: contents;
   }
-}
-
-#error{
-
 }

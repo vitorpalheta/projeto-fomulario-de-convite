@@ -30,7 +30,7 @@
             <form>
               <fieldset>
                 <legend>
-                  <img src="assets/icons/calendar.svg" alt="" />Sobre o evento
+                  <img src="assets/icons/calendar.svg" alt="ícone de calendário" />Sobre o evento
                 </legend>
 
                 <div class="input-wrapper">
@@ -105,7 +105,7 @@
                   ></textarea>
                   <div id="error">
                     <img src="./assets/icons/circle-alert.svg" alt="ícone de alerta">
-                    <span id="error">Campo obrigatório</span>
+                    <span>Campo obrigatório</span>
                   </div>
                 </div>
                 
@@ -119,7 +119,7 @@
                 <legend>
                   <img
                     src="assets/icons/paintbrush-vertical.svg"
-                    alt=""
+                    alt="ícone de pincel"
                   />Personalização
                 </legend>
 
@@ -150,73 +150,73 @@
 
                   <div class="radio-cards">
                     <div class="card-radio">
-                      <img src="./assets/Image.png" alt="">
+                      <img src="./assets/Image.png" alt="imagem tema aniversário">
                       <label for="birth">Aniversário</label>
                       <input type="radio" name="birth-shift" id="birth">
                     </div>
 
                     <div class="card-radio">
-                      <img src="./assets/Image-1.png" alt="">
+                      <img src="./assets/Image-1.png" alt="imagem tema festa infantil">
                       <label for="children-birth">Infantil</label>
                       <input type="radio" name="children-birth-shift" id="children-birth">
                     </div>
 
                     <div class="card-radio">
-                      <img src="./assets/Image-2.png" alt="">
+                      <img src="./assets/Image-2.png" alt="imagem tema de formatura">
                       <label for="graduation">Formatura</label>
                       <input type="radio" name="graduation-shift" id="graduation">
                     </div>
 
                     <div class="card-radio">
-                      <img src="./assets/Image-3.png" alt="">
+                      <img src="./assets/Image-3.png" alt="imagem tema de casamento">
                       <label for="marriage">Casamento</label>
                       <input type="radio" name="marriage-shift" id="marriage">
                     </div>
 
                     <div class="card-radio">
-                      <img src="./assets/Image-4.png" alt="">
+                      <img src="./assets/Image-4.png" alt="imagem tema de chá de bebê">
                       <label for="baby-shower">Chá de bebê</label>
                       <input type="radio" name="baby-shower-shift" id="baby-shower">
                     </div>
 
                     <div class="card-radio">
-                      <img src="./assets/Image-5.png" alt="">
+                      <img src="./assets/Image-5.png" alt="imagem tema de chá de panela">
                       <label for="bridal-shower">Chá de panela</label>
                       <input type="radio" name="bridal-shower-shift" id="bridal-shower">
                     </div>
 
                     <div class="card-radio">
-                      <img src="./assets/Image-6.png" alt="">
+                      <img src="./assets/Image-6.png" alt="imagem tema de carnaval">
                       <label for="carnival">Carnaval</label>
                       <input type="radio" name="carnival-shift" id="carnival">
                     </div>
 
                     <div class="card-radio">
-                      <img src="./assets/Image-7.png" alt="">
+                      <img src="./assets/Image-7.png" alt="imagem tema de páscoa">
                       <label for="easter">Páscoa</label>
                       <input type="radio" name="easter-shift" id="easter">
                     </div>
 
                     <div class="card-radio">
-                      <img src="./assets/Image-8.png" alt="">
+                      <img src="./assets/Image-8.png" alt="imagem tema de São João">
                       <label for="june-celebration">São João</label>
                       <input type="radio" name="june-celebration-shift" id="june-celebration">
                     </div>
 
                     <div class="card-radio">
-                      <img src="./assets/Image-9.png" alt="">
+                      <img src="./assets/Image-9.png" alt="imagem tema de Halloween">
                       <label for="halloween">Halloween</label>
                       <input type="radio" name="halloween-shift" id="halloween">
                     </div>
 
                     <div class="card-radio">
-                      <img src="./assets/Image-10.png" alt="">
+                      <img src="./assets/Image-10.png" alt="imagem tema de natal">
                       <label for="christmas">Natal</label>
                       <input type="radio" name="christmas-shift" id="christmas">
                     </div>
 
                     <div class="card-radio">
-                      <img src="./assets/Image-11.png" alt="">
+                      <img src="./assets/Image-11.png" alt="imagem tema de outro">
                       <label for="other">Outro</label>
                       <input type="radio" name="other-shift" id="other">
                     </div>
@@ -230,10 +230,10 @@
 
                       <div class="switch-selection">
                         <label class="switch">
-                          <input type="checkbox">
+                          <input id="mode" type="checkbox">
                           <span class="slider round"></span>
                         </label>
-                        <span>Escuro</span>
+                        <span id="theme">Escuro</span>
                       </div>
                       
                     </div>
@@ -251,7 +251,7 @@
 
                       <div id="alert-error">
                         <img src="./assets/icons/circle-alert.svg" alt="ícone de alerta">
-                        <span id="error"></span>
+                        <span id="mesage-error"></span>
                       </div>
                     </div>
                   </div>
@@ -270,7 +270,7 @@
                   <input name="full-name" type="text" id="full-name" placeholder="Nome completo" required />
                   <div id="alert-error">
                     <img src="./assets/icons/circle-alert.svg" alt="ícone de alerta">
-                    <span id="error">Campo obrigatório</span>
+                    <span>Campo obrigatório</span>
                   </div>
                   </div>
                 
@@ -302,51 +302,89 @@
           </section>
 
           <section id="terms">
-            
+            <div class="terms-wrapper input-wrapper checkbox-wrapper">
+                <div class="checkbox-image"></div>
+                <input type="checkbox" name="term" id="term">
+                <label for="term">
+                  Li e concordo com os <span>Termos e Condições</span> e com a <span>Política de Privacidade</span>
+                </label>              
+            </div>
+
+            <div class="terms-wrapper input-wrapper checkbox-wrapper">
+              <div class="checkbox-image"></div>
+              <input type="checkbox" name="email-accept" id="email-accept">
+              <label for="email-accept">
+                Aceito receber atualizações e promoções por e-mail</span>
+              </label>              
+          </div>
+
+          <div class="terms-wrapper input-wrapper checkbox-wrapper">
+            <div class="checkbox-image"></div>
+            <input type="checkbox" name="sms-updates" id="sms-updates">
+            <label for="sms-updates">
+              Aceito receber atualizações e promoções por SMS</span>
+            </label>              
+        </div>
+
+        <div class="btn-invitation">
+          <img src="assets/icons/ticket.svg" alt="ícone de ticket">
+          <span>Gerar convite</span>
+        </div>
+
           </section>
         </div>
       </main>
-
-      <footer>
-        <div>
-          teste
-        </div>
-      </footer>
     </div>
   </body>
 
   <script>
-    
+    // Script para trocar a label do tema
+    const theme = document.getElementById('theme');
+    const changeTheme = document.getElementById('mode');
+
+    // Condição para saber se botão do tema está ativo
+    changeTheme.onchange = (e) => {
+      if (changeTheme.checked === true) {
+        console.log("Checked")
+        theme.innerHTML="Claro"
+      } else {
+        console.log("Not Checked")
+        theme.innerHTML="Escuro"
+      }
+    }
+
+  </script>
+
+  <script>    
     let input = document.getElementById("choose-file-button");
-    let fileName = document.getElementById("file-name")
+    let fileName = document.getElementById("file-name"); 
+
 
     input.addEventListener("change", () => {
       let file = document.querySelector("input[type=file]").files[0];
 
       fileName.innerText = file.name;
       fileName.style.color = "#c8cdd0";
-    })
-
-  </script>
-
-<script>
-  
+    });
+ 
     // Função para validar o tipo do arquivo
-    document.getElementById("alert-error").style.display = "none";
-    let error = document.getElementById("error").innerHTML;
+    let alertError = document.getElementById("alert-error").style.display = "none";
+    let error = document.getElementById("mesage-error").innerHTML;
     
     function validarTipoArquivo(seletorCampo){
-      var arquivo = document.getElementById('cover-photo');
-      // var error = document.getElementById('alert-error');
       
-      // console.log(arquivo.files[0].type);
+      var arquivo = document.getElementById('cover-photo');
+
 
       // Validar o tipo de arquivo
       if(arquivo.files[0].type != "image/png"){
 
+        // console.log("Chegou");
+        // exit();
+
         // Apresenta a mensagem de erro
         document.getElementById("alert-error").style.display = "flex";
-        document.getElementById("error").innerHTML = "Error: Tipo de aquivo inválido!";
+        document.getElementById("mesage-error").innerHTML = "Tipo de aquivo inválido, selecione uma imagem .png";
 
         // Limpar o campo
         arquivo.value = '';

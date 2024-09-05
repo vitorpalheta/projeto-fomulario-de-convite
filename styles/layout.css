@@ -49,6 +49,21 @@ main{
   background-color: var(--shape-body);
   /* margin-right: auto; */
 
+  /* Estilização da barra de rolagem */
+  &::-webkit-scrollbar{
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track{
+    
+  }
+
+  &::-webkit-scrollbar-thumb{
+    background-color: var(--shape-button);
+    border-radius: 20px;
+    
+  }
+
   .main-container{
     /* max-width: 35rem; */
 
@@ -62,6 +77,3 @@ main{
   }
 }
 
-#terms{
-  border-top: 2px solid var(--input-stroke);
-}

@@ -29,8 +29,15 @@ input[type="color"]{
   border: none;
   border-radius: 50%;
   background-color: var(--shape-button);
+
+  &:hover{
+    background-color: var(--shape-hover);
+  }
   
-  
+  &:focus{
+    outline: 0.125rem solid var(--brand-light);
+  }
+
 
   &::-webkit-color-swatch{
     border: none;
